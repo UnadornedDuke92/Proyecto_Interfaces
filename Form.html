@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto — Sergio Mijangos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                title="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html#sobre-mi">Sobre mi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#participaciones">Participaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#galeria">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-contact active" href="Form.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="form-hero">
+        <div class="container text-center">
+            <h1 class="form-hero-title">Contactame</h1>
+            <p class="form-hero-sub">Dejame tu mensaje y me pondre en contacto contigo a la brevedad.</p>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div class="container py-5">
+        <div class="row justify-content-center g-4">
+
+            <!-- Info lateral -->
+            <div class="col-lg-4 col-md-5">
+                <div class="contact-info-card fade-up">
+                    <h5 class="info-title">Informacion de contacto</h5>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="bi bi-envelope-fill"></i></div>
+                        <div>
+                            <p class="info-label">Correo</p>
+                            <a href="mailto:sergio.mij4@gmail.com">sergio.mij4@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="bi bi-whatsapp"></i></div>
+                        <div>
+                            <p class="info-label">WhatsApp</p>
+                            <a href="https://wa.me/5532755102">+55 3275 5102</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div>
+                            <p class="info-label">Ubicacion</p>
+                            <span>Mexico, CDMX</span>
+                        </div>
+                    </div>
+
+                    <hr class="info-divider">
+
+                    <p class="info-label mb-2">Tiempo de respuesta</p>
+                    <p class="info-response">Respondo en menos de 24 horas en dias habiles.</p>
+                </div>
+            </div>
+
+            <!-- Formulario -->
+            <div class="col-lg-7 col-md-7">
+                <div class="form-card fade-up">
+                    <form id="contactForm" novalidate>
+
+                        <div class="row g-3">
+
+                            <div class="col-sm-6">
+                                <label for="nombre" class="form-label">Nombre <span class="required">*</span></label>
+                                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" required minlength="2">
+                                <div class="invalid-feedback">Ingresa tu nombre (minimo 2 caracteres).</div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="apellido" class="form-label">Apellido <span class="required">*</span></label>
+                                <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Tu apellido" required minlength="2">
+                                <div class="invalid-feedback">Ingresa tu apellido.</div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="email" class="form-label">Correo electronico <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="correo@ejemplo.com" required>
+                                <div class="invalid-feedback">Ingresa un correo valido.</div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="telefono" class="form-label">Telefono</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="+52 55 0000 0000">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="asunto" class="form-label">Asunto <span class="required">*</span></label>
+                                <select id="asunto" name="asunto" class="form-select" required>
+                                    <option value="" disabled selected>Selecciona un asunto</option>
+                                    <option value="proyecto">Propuesta de proyecto</option>
+                                    <option value="colaboracion">Colaboracion</option>
+                                    <option value="freelance">Trabajo freelance</option>
+                                    <option value="informacion">Solicitud de informacion</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                                <div class="invalid-feedback">Selecciona un asunto.</div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="mensaje" class="form-label">Mensaje <span class="required">*</span></label>
+                                <textarea id="mensaje" name="mensaje" class="form-control" rows="5"
+                                    placeholder="Escribe tu mensaje aqui..." required minlength="10"></textarea>
+                                <div class="d-flex justify-content-between mt-1">
+                                    <div class="invalid-feedback" style="display:block; visibility:hidden;" id="msg-error">
+                                        El mensaje debe tener al menos 10 caracteres.
+                                    </div>
+                                    <small id="char-counter" class="text-muted ms-auto">0 / 500</small>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input type="checkbox" id="privacidad" name="privacidad" class="form-check-input" required>
+                                    <label for="privacidad" class="form-check-label">
+                                        Acepto que mis datos sean utilizados para responder a mi consulta.
+                                    </label>
+                                    <div class="invalid-feedback">Debes aceptar para continuar.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn-send w-100">
+                                    <i class="bi bi-send-fill me-2"></i>Enviar mensaje
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                    <!-- Mensaje de exito -->
+                    <div id="success-msg" class="success-banner d-none">
+                        <i class="bi bi-check-circle-fill me-2"></i>
+                        Mensaje enviado correctamente. Te respondere pronto!
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="mb-1">
+                <a href="mailto:sergio.mij4@gmail.com"><i class="bi bi-envelope-fill me-1"></i>sergio.mij4@gmail.com</a>
+                <span class="mx-3">|</span>
+                <a href="https://wa.me/5532755102"><i class="bi bi-whatsapp me-1"></i>WhatsApp</a>
+            </div>
+            <small class="text-secondary">&copy; 2025 Sergio Mijangos</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Fade-up on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // Contador de caracteres del textarea
+        const textarea = document.getElementById('mensaje');
+        const counter = document.getElementById('char-counter');
+        textarea.addEventListener('input', () => {
+            const len = textarea.value.length;
+            counter.textContent = len + ' / 500';
+            if (len > 500) textarea.value = textarea.value.slice(0, 500);
+        });
+
+        // Validacion y envio del formulario
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (!form.checkValidity()) {
+                form.classList.add('was-validated');
+                return;
+            }
+            form.classList.add('sending');
+            setTimeout(() => {
+                form.style.display = 'none';
+                document.getElementById('success-msg').classList.remove('d-none');
+            }, 800);
+        });
+    </script>
+</body>
+
+</html>

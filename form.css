@@ -1,0 +1,266 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f6f9;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Navbar ── */
+.navbar-custom {
+    background-color: #1a1a2e;
+}
+
+.navbar-custom .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.navbar-custom .nav-link {
+    color: #a0aec0;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: #e94560;
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: #e94560;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23e94560' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-custom .nav-link-contact {
+    background: #e94560;
+    color: #fff !important;
+    border-radius: 20px;
+    padding: 5px 16px !important;
+    transition: background 0.2s;
+}
+
+.navbar-custom .nav-link-contact:hover {
+    background: #c73652;
+}
+
+/* ── Hero ── */
+.form-hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+    color: #fff;
+    padding: 50px 0 40px;
+}
+
+.form-hero-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.form-hero-sub {
+    color: #a0aec0;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* ── Fade-up animation ── */
+.fade-up {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── Contact info card ── */
+.contact-info-card {
+    background: #1a1a2e;
+    color: #fff;
+    border-radius: 14px;
+    padding: 30px 28px;
+    height: 100%;
+}
+
+.info-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.info-icon {
+    font-size: 1.2rem;
+    color: #e94560;
+    min-width: 22px;
+    margin-top: 2px;
+}
+
+.info-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #a0aec0;
+    margin: 0 0 2px;
+}
+
+.contact-info-card a,
+.contact-info-card span {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.contact-info-card a:hover {
+    color: #e94560;
+}
+
+.info-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 24px 0;
+}
+
+.info-response {
+    font-size: 0.85rem;
+    color: #a0aec0;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── Form card ── */
+.form-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 34px 36px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+}
+
+.required {
+    color: #e94560;
+}
+
+.form-control,
+.form-select {
+    border: 1.5px solid #dde1ec;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-family: inherit;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #e94560;
+    box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.12);
+    outline: none;
+}
+
+.form-control.is-valid,
+.form-select.is-valid {
+    border-color: #28a745;
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+    border-color: #e94560;
+}
+
+.form-check-input:checked {
+    background-color: #e94560;
+    border-color: #e94560;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.2);
+}
+
+.invalid-feedback {
+    font-size: 0.78rem;
+    color: #e94560;
+}
+
+/* ── Send button ── */
+.btn-send {
+    background: #e94560;
+    color: #fff;
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.btn-send:hover {
+    background: #c73652;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(233, 69, 96, 0.35);
+}
+
+.sending .btn-send {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* ── Success banner ── */
+.success-banner {
+    background: #eafaf1;
+    color: #1a7a45;
+    border: 1.5px solid #a8e6c1;
+    border-radius: 10px;
+    padding: 20px 24px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* ── Footer ── */
+footer {
+    background: #1a1a2e;
+    color: #a0aec0;
+    padding: 28px 0;
+    font-size: 0.87rem;
+    margin-top: auto;
+}
+
+footer a {
+    color: #e94560;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #ff6b85;
+}
