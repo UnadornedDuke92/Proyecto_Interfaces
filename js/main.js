@@ -79,9 +79,9 @@ sections.forEach(s => activateLink.observe(s));
 
 /* ---- Typing animation ---- */
 const phrases = [
-    'Ingeniero en Animacion y Efectos Visuales',
+    'Ingeniero en Animacion y Videojuegos',
     'Especialidad en Diseno Interactivo',
-    'Desarrollador de Assets 3D',
+    'Programacion · Datos · 3D',
     'Motion Graphics & VFX'
 ];
 let phraseIndex = 0, charIndex = 0, deleting = false;
