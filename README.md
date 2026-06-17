@@ -53,5 +53,5 @@ cd Proyecto_Interfaces
 > **Nota:** `ContactForm.jsx` usa Babel Standalone via CDN. Para que cargue correctamente en local, sirve los archivos con un servidor local (p.ej. VS Code Live Server).
 
 ## Autor
-**Sergio Mijangos** — Ingeniería en Animación y Efectos Visuales  
+**Sergio Mijangos** — Ingeniería en Animación y Videojuegos  
 [GitHub](https://github.com/UnadornedDuke92) · [LinkedIn](https://linkedin.com/in/sergio-carlos-mijangos-carbajal-a4878a26b)
